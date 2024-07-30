@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Puntajes del Torneo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Torneo de Fútbol</h1>
+        <div class="team-names">
+            <label for="team1">Equipo 1:</label>
+            <input type="text" id="team1" placeholder="Nombre del equipo 1">
+            <label for="team2">Equipo 2:</label>
+            <input type="text" id="team2" placeholder="Nombre del equipo 2">
+            <label for="team3">Equipo 3:</label>
+            <input type="text" id="team3" placeholder="Nombre del equipo 3">
+            <label for="team4">Equipo 4:</label>
+            <input type="text" id="team4" placeholder="Nombre del equipo 4">
+            <button onclick="initializeTable()">Inicializar Tabla y Generar Jornada 1</button>
+        </div>
+        
+        <table id="score-table">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>G</th>
+                    <th>E</th>
+                    <th>P</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <div class="match-scores">
+            <h2>Registrar Resultados de la Jornada</h2>
+            <div id="matches">
+                <!-- Matches will be generated here dynamically -->
+            </div>
+            <button onclick="updateScores()">Actualizar Puntajes</button>
+            <button onclick="nextRound()" style="display:none;" id="next-round-btn">Siguiente Jornada</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.team-names, .match-scores {
+    margin-bottom: 20px;
+}
+
+.team-names label, .match-scores label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.team-names input[type="text"], .match-scores input[type="number"] {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+.round h3 {
+    text-align: center;
+    color: #007bff;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.match span {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.match input[type="number"] {
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .team-names input[type="text"], .match-scores input[type="number"] {
+        width: calc(100% - 20px);
+        margin: 5px 0;
+    }
+
+    .match {
+        flex-direction: column;
+    }
+
+    .match span {
+        margin-bottom: 10px;
+    }
+
+    .match input[type="number"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 0.6rem;
+    }
+}
